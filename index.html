@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List- Make your own todo list</title>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+
+    <section class="container">
+        <div class="todo">
+            <input type="text" id="taskinput" placeholder="Add tasks..!" onkeypress="enterTodo(event)">
+            <button onclick="addTodo(this)">Add</button>
+            <button onclick="removeAll()">Remove All</button>
+        </div>
+        <ul id="ulist" style="list-style: none;"></ul>
+    </section>
+    
+    <script src="https://kit.fontawesome.com/c54527c30a.js" crossorigin="anonymous"></script>
+    <script src="todolist.js"></script>
+</body>
+</html>
